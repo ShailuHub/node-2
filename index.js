@@ -1,11 +1,18 @@
 const http = require("http");
+const express = require("express");
+const app = express();
 
-//const requesHandler = require("./routes");
+//app.use() -->creates middleware
+app.use((req, res, next) => {
+  console.log("I m first middleware");
+  next();
+});
 
-const { handler, message } = require("./routes");
-console.log(message);
-const server = http.createServer(handler);
+app.use((req, res, next) => {
+  console.log("I m next middleware");
+  res.send("<h1>Hello i am from Express Side</h1>");
+});
 
-server.listen(3000, () => {
+app.listen(3000, () => {
   console.log("Server is working on the port 3000");
 });
