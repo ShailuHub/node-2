@@ -1,0 +1,26 @@
+{
+  "name": "project-1",
+  "version": "1.0.0",
+  "description": "Simple project to learn basics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShailuHub/node-2.git"
+  },
+  "keywords": [
+    "Basic",
+    "node",
+    "js",
+    "project"
+  ],
+  "author": "shailuHub",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShailuHub/node-2/issues"
+  },
+  "homepage": "https://github.com/ShailuHub/node-2#readme"
+}
